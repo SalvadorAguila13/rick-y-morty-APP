@@ -1,0 +1,102 @@
+.residentCard {
+    background-color: #062226;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    border: 3px #5fe03f solid;
+}
+
+
+.residentCard__status {
+    position: absolute;
+    top: 25px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 2px 10px;
+    background-color: #062226;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    }
+
+.residentCard__status-circle {
+    width: 14px;
+    height: 14px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.Alive {
+    background-color: #4AB648;
+}
+
+.unknown {
+    background-color: #7E7E7E;
+}
+
+.residentCard__status-name {
+    font-size:15px;
+    font-weight:bold;
+}
+
+.residentCard__info {
+    padding: 20px;
+}
+
+.residentCard__name{
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+.residentCard__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.residentCard__item {
+    color: white;
+    line-height: 20px;
+}
+
+.residentCard__item span{
+    color: #7E7E7E;
+    font-weight: bold;
+    display: block;
+}
+
+
+  .parpadea {
+    animation-name: parpadeo;
+    animation-duration: 1.7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  
+    -webkit-animation-name:parpadeo;
+    -webkit-animation-duration: 1.7s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+  }
+  
+  @-moz-keyframes parpadeo{  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+  
+  @-webkit-keyframes parpadeo {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+     100% { opacity: 1.0; }
+  }
+  
+  @keyframes parpadeo {  
+    0% { opacity: 1.0; }
+     50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+  }
+
+ /****************************************************************************************/
+ 
+ 
