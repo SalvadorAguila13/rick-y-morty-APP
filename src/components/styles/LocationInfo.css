@@ -3,7 +3,6 @@
     font-family: 'Roboto';
     flex-direction: column;
     background-color: #062226;
-    margin: 25px 0;
     padding:20px;
     gap: 30px;
     color: #5fe03f;
@@ -14,13 +13,12 @@
 @media (min-width: 768px){
     .locationInfo {
     padding: 30px;
-    gap: 60px;  
+    gap: 50px;  
     }
 }
 @media (min-width: 1100px){
     .locationInfo {
-    padding: 42px;
-    gap: 70px;  
+    padding: 35px;
     }
 }
 
@@ -28,6 +26,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 @media (min-width: 768px){
@@ -37,24 +36,24 @@
 }
 @media (min-width: 1100px){
     .locationInfo__name {
-    font-size: 75px;   
+    font-size: 55px;   
     }
 }
 
 .locationInfo__list {
-    display: flex;
-    justify-content: space-evenly;
-    line-height: 3px;
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
 }
+
 
 .locationInfo__item {
   display: flex;
   font-weight: 400;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 30px;
+  text-align: center;
+  gap: 20px;
 }
 
 @media (min-width: 768px){
@@ -64,7 +63,8 @@
 }
 @media (min-width: 1100px){
     .locationInfo__item {
-    font-size: 25px;   
+    font-size: 25px;
+    gap: 25px;   
     }
 }
 
@@ -83,6 +83,6 @@
 }
 @media (min-width: 1100px){
     .locationInfo__item span {
-    font-size: 40px;   
+    font-size: 37px;   
     }
 }
